@@ -9,7 +9,7 @@ import (
 	"github.com/openshift/origin/pkg/cmd/util/serviceability"
 )
 
-func main() {
+unc main() {
 	defer serviceability.BehaviorOnPanic(os.Getenv("OPENSHIFT_ON_PANIC"))()
 	defer serviceability.Profile(os.Getenv("OPENSHIFT_PROFILE")).Stop()
 
